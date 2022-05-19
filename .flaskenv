@@ -1,1 +1,1 @@
-FLASK_APP=ethoeblog.py
+FLASK_APP=app/app.py
