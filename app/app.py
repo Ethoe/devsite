@@ -252,6 +252,11 @@ def edit(slug):
     return _create_or_edit(entry, 'edit.html')
 
 
+@app.route('/about/')
+def about():
+   return render_template('index.html')
+
+
 @app.template_filter('clean_querystring')
 def clean_querystring(request_args, *keys_to_remove, **new_values):
     # We'll use this template filter in the pagination include. This filter
