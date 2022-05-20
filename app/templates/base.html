@@ -34,8 +34,8 @@
                     <li><a href="{{ url_for('create') }}">Create Entry</a></li>
                     <li><a href="{{ url_for('logout') }}">Log out</a></li>
                     {% else %}
-		    <li><a href="{{ url_for('login') }}">Log in</a></li>
-		    {% endif %}
+                    <li><a href="{{ url_for('login') }}">Log in</a></li>
+                    {% endif %}
                     {% block extra_header %}{% endblock %}
                 </ul>
                 {% block search_bar %}
@@ -67,7 +67,7 @@
 
         {% block content %}{% endblock %}
 
-        <footer>
+        <footer class="footer">
             <hr />
             <p>Ryan Outtrim</p>
         </footer>
